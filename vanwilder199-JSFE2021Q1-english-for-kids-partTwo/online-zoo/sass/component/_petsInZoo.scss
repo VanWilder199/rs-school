@@ -1,0 +1,265 @@
+.petsInZoo__wrapper {
+  margin-top: 132px;
+  @include media-notebook {
+    margin-top: 100px;
+    padding-left: 40px;
+  };
+  @include media-tablet {
+    padding-left: 0;
+  };
+  @include media-mobile {
+    margin-top: 50px;
+  }
+}
+
+.petsInZoo-title {
+  color: $color-topic-btn;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  @include media-notebook {
+    @include font($size: 5.4rem, $height: 6.6rem, $weight: 600);
+    padding-left: 155px;
+  }
+  @include media-tablet {
+    padding:0 123px;
+  };
+  @include media-mobile {
+    padding: 0;
+    @include font($size:2.6rem, $height: 3.2rem, $weight: 500);
+  }
+}
+
+.petsInZoo-text {
+  width: 920px;
+  margin: 0 auto;
+  padding-top: 50px;
+  @include font($size: 2.6rem, $height: 3.4rem, $weight:500);
+  @include media-notebook {
+    padding: 36px 54px 0 118px;
+   width: auto;
+    text-align: center;
+  };
+  @include media-tablet {
+    width: auto;
+    padding: 30px 20px 0 20px;
+  };
+  @include media-mobile {
+    @include font($size: 1.8rem, $height: 2.7rem, $weight:normal);
+    width: auto;
+    padding: 25px 10px 0 10px;
+  }
+}
+
+.petsInZoo-btn {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  @include media-tablet {
+    display: none;
+  }
+}
+.petsInZoo-btn__tablet {
+  @include media-tablet {
+    display: flex;
+  };
+  @include media-mobile {
+    margin: 0;
+  }
+}
+
+.petsInzoo-BtnLeftRight {
+  margin-top: 100px;
+}
+.petsInZoo__left {
+  background-image: url("../../assets/icons/btn-left.svg");
+  width: 60px;
+  height: 60px;
+}
+
+.petsInZoo__right {
+  background-image: url("../../assets/icons/btn-right.svg");
+  width: 60px;
+  height: 60px;
+  margin-left: 60px;
+}
+
+.petsInZoo__left:hover {
+  background-image: url("../../assets/icons/buttonHoverLeft.svg");
+}
+
+.petsInZoo__right:hover {
+  background-image: url("../../assets/icons/buttonHover.svg");
+}
+
+//CARDS
+.zoom-main, .lemur, .gorrilla, .crocodil, .eagles, .coala, .lion, .tiger, .panda {
+  width: 440px;
+  height: 747px;
+  background-color: $color-background;
+  @include media-notebook {
+    width: 455px;
+    height: 715px;
+  };
+  @include media-tablet {
+    width: 300px;
+    height: 600px;
+  }
+  @extend %transition;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+.lemur, .gorrilla, .crocodil, .eagles, .tiger, .panda {
+  @include media-tablet {
+    display: none;
+  }
+}
+.panda-img, .lemur-img, .gorrilla-img, .crocodil-img, .eagles-img, .coala-img, .lion-img, .tiger-img{
+  width: 440px;
+  height: 436px;
+  background-repeat: no-repeat;
+  position: relative;
+    @include media-tablet {
+      width: 300px;
+      height: 333px;
+    }
+
+}
+.animal__img {
+  @include media-notebook {
+    width: 455px;
+  };
+  @include media-tablet {
+      width: 300px;
+      height: 333px;
+    }
+
+}
+
+
+.animals-name {
+  position: absolute;
+  color: $color-text-alternative;
+  background-color: $color-background;
+  text-transform: capitalize;
+  margin: 0;
+  padding: 12px 19px;
+  @include font($size: 2.6rem, $height: 3.4rem, $weight:500)
+
+}
+
+.animals-title {
+  color: $color-text-alternative;
+  text-align: center;
+  text-transform: capitalize;
+  margin: 0;
+  @include font($size: 2.6rem, $height: 3.4rem, $weight:500);
+  padding-top: 30px;
+  @include media-notebook {
+    padding-top: 15px;
+  }
+  @include media-tablet {
+    padding-top: 15px;
+  }
+}
+
+.animals-text {
+  padding-top: 20px;
+  color: $color-text-alternative;
+  width: 380px;
+  text-align: center;
+  margin: 0 auto;
+  @include font($size: 1.8rem, $height: 2.7rem);
+  @include media-tablet {
+    padding-top: 15px;
+    width: 241px;
+  }
+}
+
+// grid cards
+.animals, {
+  display: flex;
+  padding: 50px 0 50px 245px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: stretch;
+
+  @include media-notebook {
+    padding: 0;
+    padding-top: 30px;
+    grid-gap: 20px;
+  };
+  @include media-tablet {
+    padding: 50px 20px 0 20px;
+    grid-template-rows: 1fr;
+  };
+  @include media-mobile {
+    padding: 30px 10px 0 10px;
+  }
+}
+
+
+.gradient {
+  background-image: linear-gradient(90deg,rgba(255,255,255,.4) 0,#fff 100%);
+  position: absolute;
+  z-index: 1;
+  left: 2649px;
+  top: 3196px;
+  width: 218px;
+  height: 1533px;
+  @include media-notebook {
+    display: none;
+  }
+}
+
+
+
+#carousel {
+  overflow: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+#carouselSecond {
+  overflow: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+#carousel::-webkit-scrollbar {
+  height: 0;
+
+}
+
+#carouselSecond::-webkit-scrollbar {
+  height: 0;
+
+}
+
+
+.petsInZoo__right {
+  opacity: 50%;
+}
+
+#content {
+  display: grid;
+  grid-gap: 40px;
+  grid-auto-flow: column;
+  margin: auto;
+  box-sizing: border-box;
+}
+#contentSecond {
+  display: grid;
+  grid-gap: 40px;
+  grid-auto-flow: column;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.second-row {
+  padding-top: 40px;
+}
+
+

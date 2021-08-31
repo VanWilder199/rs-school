@@ -1,0 +1,239 @@
+
+
+.reviews-background {
+
+  background-image: url("../../assets/images/reviews/bigpanda.jpg");
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  background-size: 100%;
+  @include media-notebook {
+    background: $color-background;
+  }
+
+}
+
+.reviews__wrapper {
+  margin-left: 251.5px;
+  @include Big {
+    margin: 0 auto;
+  }
+  @include media-notebook {
+    margin: 0;
+    padding-left: 40px;
+  }
+  @include media-tablet {
+    padding-left: 20px;
+  };
+  @include media-mobile {
+    padding: 0 10px;
+  }
+
+}
+.reviews__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  @include media-notebook {
+    grid-template-columns: none;
+  }
+  @include media-tablet {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.reviews-allCards {
+  display: flex;
+
+  grid-gap: 30px;
+  @include media-notebook {
+    padding-top: 50px;
+    padding-left: 100px;
+  }
+  @include media-tablet {
+    display: flex;
+    padding-left: 0;
+  };
+  @include media-mobile {
+    padding-top: 46px;
+  }
+}
+
+.reviews-text {
+  padding-right: 40px;
+
+}
+.reviews-carusel {
+ @include media-mobile {
+   display: flex;
+   justify-content: center;
+   padding-top: 36px;
+   position: relative;
+   z-index: 5;
+ }
+}
+.reviews__caruselActive {
+ @include media-mobile {
+   background-color: $color-text-alternative;
+ }
+}
+
+.reviews__carusel {
+  @include media-mobile {
+    width: 8px;
+    height: 8px;
+    margin: 0px 10px;
+    border: 1px solid $color-text-alternative;
+    border-radius: 50%;
+  };
+}
+
+.reviews-title {
+  text-transform: uppercase;
+  color: $color-text-alternative;
+  width: 440px;
+  @include media-tablet {
+    padding-top: 80px;
+  };
+  @include media-mobile {
+    width: 320px;
+    text-align: center;
+    padding: 40px 10px 0 10px;
+  }
+}
+
+.reviews__text {
+  color: $color-text-alternative;
+  @include font($size: 2.6rem, $weight: 500, $height: 3.4rem);
+  width: 560px;
+  padding-top: 40px;
+  @include media-notebook {
+    width: 577px;
+    padding-top: 22px;
+  };
+  @include media-mobile {
+    width: 300px;
+    text-align: center;
+    @include font($size: 1.8rem, $weight: normal, $height: 2.7rem);
+    padding: 0 10px;
+  }
+}
+
+
+.reviewsSlider_btn {
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  background: transparent;
+}
+
+.reviews-btn {
+  padding: 397px 100px 150px;
+  @include media-notebook {
+    padding: 117px 0 149px 91px;
+  }
+  @include media-tablet {
+    padding: 50px 0 752px 20px;
+    position: relative;
+  };
+  @include media-mobile {
+    padding: 50px 0 450px 0;
+  };
+
+}
+
+
+
+.reviews__left {
+  background-image: url("../../assets/icons/reviews/button-white-left.svg");
+  width: 60px;
+  height: 60px;
+}
+
+.reviews__right {
+  background-image: url("../../assets/icons/reviews/button-white-right.svg");
+  width: 60px;
+  height: 60px;
+  margin-left: 60px;
+}
+
+.reviews__left:hover {
+  background-image: url("../../assets/icons/reviews/btnHoverWhiteLeft.svg");
+}
+
+.reviews__right:hover {
+  background-image: url("../../assets/icons/reviews/btnHoverWhiteRight.svg");
+}
+
+.reviewsSlider-btn {
+  padding-top: 35px;
+  text-align: center;
+  padding-right: 270px;
+  @include media-notebook {
+    display: flex;
+    justify-content: flex-end;
+    padding: 100px 0 0 0;
+  }
+  @include media-tablet {
+    display: none;
+  }
+}
+.reviews__btnTablet {
+  @include media-tablet {
+    position: relative;
+    z-index: 2;
+  };
+  @include media-mobile {
+    width: 299px;
+    padding: 12px 45px 12px 45px;
+
+  }
+}
+
+.reviews-img {
+  display: none;
+  @include media-tablet {
+    display: block;
+    position: absolute;
+    left: -20px;
+    top: -75px;
+    z-index: 1;
+  };
+  @include media-mobile {
+    left: -10px;
+  }
+}
+
+.reviews__img {
+  width: 640px;
+  height: 948px;
+  @include media-mobile {
+    height: 620px;
+    width: 320px;
+  }
+}
+
+/* General styles */
+.ant-carousel {
+  width: auto;
+  position: relative;
+}
+
+.ant-carousel-hider {
+  overflow: hidden;
+}
+
+.ant-carousel-list {
+  width: auto;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-start;
+  grid-gap: 30px;
+
+}
+
+.ant-carousel-element {
+  display: block;
+  flex: 0 0 auto;
+}

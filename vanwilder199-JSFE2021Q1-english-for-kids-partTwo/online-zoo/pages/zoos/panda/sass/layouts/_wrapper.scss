@@ -1,0 +1,38 @@
+.wrapper {
+  max-width: $content-width;
+  margin: auto;
+  overflow: hidden;
+  @include media-tablet {
+    padding: 0 0 0 20px;
+  }
+}
+
+.didYouKnow__wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  @include media-notebook {
+    max-width: 1200px;
+  };
+  @include media-tablet {
+    padding: 0 20px;
+  };
+  @include media-mobile {
+    padding: 0;
+  }
+}
+
+.quickDonate__wrapper {
+  max-width: 1400px;
+  display: flex;
+  justify-content: space-between;
+  @include media-notebook {
+    padding: 0 40px;
+  }
+  @include media-tablet {
+    display: block;
+    text-align: -webkit-center;
+  }
+  @include media-mobile {
+    padding: 0 10px;
+  }
+}

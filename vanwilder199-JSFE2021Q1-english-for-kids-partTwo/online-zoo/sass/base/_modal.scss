@@ -1,0 +1,380 @@
+
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  position: relative;
+  border-radius: 10px;
+  background-color: $color-text-alternative;
+  width: 1160px;
+  height: 815px;
+  overflow: auto;
+  box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.3);
+
+}
+
+.modal__close-icon {
+  position: absolute;
+  top: 30px;
+  right: 26px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  svg {
+    pointer-events: none;
+  }
+}
+
+.popUP {
+  display: block;
+  width: 1500px;
+  height: 1500px;
+}
+
+.popUp__content {
+
+}
+
+.popUp__title {
+  @include font($size: 5.4rem, $weight: 600, $height: 6.6rem);
+  text-align: center;
+  color: $color-link-header;
+  text-transform: uppercase;
+  margin: 0 auto;
+  width: 678px;
+}
+
+.popUp__subtitle {
+  @include font($size: 1.8rem, $weight: normal, $height: 2.7rem);
+  padding-top: 30px;
+  width: 570px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.popUp__button {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 80px;
+}
+
+.pop__btn-inner {
+  background-color: $color-topic-btn;
+  width: 120px;
+  height: 65px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  color: $color-text-alternative;
+  border: none;
+  cursor: pointer;
+
+}
+.pop__btn-inner:nth-last-child(1) {
+  width: 200px;
+}
+
+
+//Donation firstStep
+
+.donation {
+  width: 920px;
+  height: 819px;
+  box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+.donationStepTwo {
+  width: 920px;
+  height: 745px;
+  box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+.donation__header {
+
+  background-color: $color-link-header;
+
+}
+
+.donation__title {
+  @include font($size: 4.2rem, $weight: 500, $height: 5.1rem);
+  text-transform: uppercase;
+  color: $color-text-alternative;
+  text-align: center;
+  padding: 42px 0 ;
+}
+
+.donation__subcribe {
+  @include font($size: 1.8rem, $weight: 600, $height: 2.7rem);
+  padding-top: 50px;
+  padding-left: 123px;
+  text-transform: capitalize;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.donation__line {
+  position: absolute;
+  width: 919px;
+  border: 1px solid #A4A8AE;
+  left: 0;
+  top: 79px;
+}
+
+.donation__firstRow {
+  padding: 0 120px;
+}
+
+.donation_star {
+  color: $color-topic-btn;
+}
+
+.donation__firstRow-text {
+  @include font($size: 1.8rem, $weight: normal, $height: 2.7rem);
+  padding-top: 40px;
+}
+
+.donation__btn-inner {
+  width: 80px;
+  height: 65px;
+  background-color: $color-topic-btn;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #FFFFFF;
+  @include font($size: 1.8rem, $weight: 600, $height: 2.2rem);
+  text-transform: uppercase;
+}
+
+.donation__flex {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.donation__secondRow {
+  padding: 40px 120px;
+
+
+}
+.donation__otheramount {
+  display: flex;
+  justify-content: flex-start;
+  :nth-child(2) {
+    margin-left: 40px;
+  }
+}
+
+.donation__btnOther {
+  width: 200px;
+  height: 65px;
+  background-color: $color-topic-btn;
+  border: none;
+  border-radius: 5px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+
+}
+.input::placeholder {
+  color: #FFFFFF !important;
+
+}
+
+.donation__otherInput {
+  width: 200px;
+  height: 65px;
+  border-radius: 5px;
+  border: 1px solid #000000;
+}
+
+.donation__thirdRow {
+
+}
+
+.donation__choose {
+  display: flex;
+  padding: 0 120px;
+  :nth-child(2) {
+    margin-left: 40px;
+  }
+}
+
+select {
+  width: 440px;
+  height: 65px;
+}
+
+option {
+  text-indent: 200px;
+}
+
+.donation__fouthRow {
+  padding: 40px 120px;
+  display: flex;
+  align-items: center;
+  :nth-child(2) {
+    margin-left: 20px;
+  }
+}
+
+.checkbox {
+  width: 30px;
+  height: 30px;
+}
+
+.donation__fifthRow {
+  padding-top: 50px;
+  padding-left: 120px;
+  padding-right: 225px;
+  display: flex;
+  justify-content: space-between;
+
+}
+.donation__cir {
+  :nth-child(2) {
+   margin: 0  10px;
+  }
+}
+
+.donation__circle {
+  background: #FFFFFF;
+  border: 1px solid #00A092;
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+  padding: 0px 10px 0px 9px;
+}
+
+.donation__btn {
+  width: 200px;
+  height: 74px;
+  background: $color-topic-btn;
+  margin-top: -30px;
+  cursor: pointer;
+
+}
+.btnNextThree {
+  
+}
+
+.donation_active {
+  background-color:  $color-topic-btn;
+}
+
+.stepTwo__line {
+  margin-top: 10px ;
+}
+
+.donationStepTwo__firstRow {
+  display: flex;
+  flex-direction: column;
+  padding: 0 120px;
+}
+
+.donationStepTwo__text {
+  width: 680px;
+  height: 60px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.donationStepTwo__subcribe {
+  @include font($size: 1.8rem, $weight: normal, $height: 2.5rem);
+  padding-top: 10px;
+}
+
+.donation__back {
+  background: none;
+  border: none;
+  text-decoration: underline;
+  color: $color-topic-btn;
+  margin-top: -25px;
+  cursor: pointer;
+}
+
+.donationStepTwo__fifthRow {
+  padding-top: 50px;
+}
+
+.donationStepThree__flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.donationStepThree__card {
+  border: 1px solid #000000;
+  width: 442px;
+  height: 65px;
+  border-radius: 5px;
+}
+
+.donationStepThree__cvv {
+  border: 1px solid #000000;
+  border-radius: 5px;
+  width: 198px;
+  height: 65px;
+}
+.padding {
+  padding: 0;
+}
+
+.donationStepTwo__flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+#month {
+  width: 201px ;
+  height: 65px;
+}
+
+#year {
+  width: 201px;
+  height: 65px;
+}
+
+.donation_cvv {
+  margin-top: -30px;
+}
+
+.donation__padding{
+  padding: 50px 358px 100px 120px;
+}
+.donation__otherInput:before {
+  display: block;
+  content: '$'
+}
+
+.btn__active {
+  border: 1px solid coral;
+  box-shadow: 0px 4px 50px rgb(0 0 0 / 72%);
+}
+
+.btn__activeOther:active {
+  border: 1px solid coral;
+  box-shadow: 0px 4px 50px rgb(0 0 0 / 72%);
+}
+
+.display_none {
+  display: none;
+}
+
+.donation__backThree {
+  background: none;
+  border: none;
+  text-decoration: underline;
+  color: $color-topic-btn;
+  margin-top: -25px;
+  cursor: pointer;
+}
+

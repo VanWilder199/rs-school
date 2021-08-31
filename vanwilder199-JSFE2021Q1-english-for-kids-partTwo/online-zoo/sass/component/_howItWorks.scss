@@ -1,0 +1,135 @@
+.welcome-content {
+  @include  media-tablet {
+    padding: 0 21px;
+  };
+  @include media-mobile {
+    padding: 0 10px;
+  }
+}
+.welcome-title {
+  text-transform: uppercase;
+  color: $color-topic-btn;
+  margin: 0;
+  padding-top: 68px;
+  margin-right: 77px;
+  @include media-notebook {
+    width: 523px;
+    padding-top: 30px;
+  };
+  @include media-mobile {
+    margin: 0;
+    width: auto;
+  }
+
+}
+.howItWorks__Image {
+  @include media-notebook {
+    width: 660px;
+  };
+  @include media-mobile {
+    width: 320px;
+  }
+}
+
+.welcome-text {
+  margin: 0;
+  padding-top: 50px;
+  margin-right: 40px;
+  color: $color-text-main;
+  @include font($size: 1.8rem, $weight: 400, $height: 2.7rem);
+  @include media-notebook {
+    width: 560px;
+    padding-top: 30px;
+  };
+  @include media-tablet {
+    width: 599px;
+  };
+  @include media-mobile {
+    display: none;
+  }
+}
+
+.welcome-textMobile {
+  display: none;
+  @include media-mobile {
+    display: block;
+    margin: 0;
+    padding-top: 30px;
+    color: $color-text-main;
+    @include font($size: 1.8rem, $weight: 400, $height: 2.7rem);
+  }
+
+}
+
+
+.work {
+  margin-top: 150px;
+  @include media-notebook {
+    margin-top: 37px;
+  }
+}
+.work-img {
+  @include media-notebook {
+    padding-top: 36px;
+  };
+  @include media-mobile {
+    padding-top: 6px;
+  }
+}
+.work__img {
+  @include media-notebook {
+    width: 660px;
+    height: 425px;
+  };
+  @include media-mobile {
+    width: 320px;
+    height: 215px;
+  }
+}
+
+.work-title {
+  text-transform: uppercase;
+  color: $color-topic-btn;
+  margin-left: 40px;
+  padding-top: 106px;
+  @include media-notebook {
+    padding-top: 30px;
+  }
+  @include media-tablet {
+    margin-left: 0;
+    padding-left: 20px;
+  }
+  @include media-mobile {
+    padding-left: 10px;
+  }
+}
+
+.work-text {
+  padding-top: 50px;
+  margin-left: 40px;
+  color: $color-text-main;
+  @include font($size: 1.8rem, $weight: 400, $height: 2.7rem);
+  @include media-notebook {
+    padding-top: 30px;
+    padding-right: calc(22% - 30px);
+    width: 100%;
+  };
+  @include media-tablet {
+    margin-left: 0;
+    padding-left: 20px;
+  };
+  @include media-mobile {
+    display: none;
+  }
+}
+
+.work-textMobile {
+  display: none;
+  @include media-mobile {
+    display: block;
+    padding: 30px 10px 0 10px;
+    color: $color-text-main;
+    @include font($size: 1.8rem, $weight: 400, $height: 2.7rem);
+  }
+}
+

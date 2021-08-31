@@ -1,0 +1,108 @@
+.promo {
+  @include media-tablet {
+ position: relative;
+  }
+}
+
+.promo-background {
+  background: url("../../assets/images/panda.png") no-repeat;
+  margin: 0 auto;
+  height: 900px;
+  margin-top: -46px;
+  background-size: 100%;
+  @include media-notebook {
+    max-width: 100%;
+    height: 100%;
+    background: linear-gradient(106.13deg, #FFFFFF 18.05%, rgba(255, 255, 255, 0.64684) 35.48%, rgba(255, 255, 255, 0) 45.95%), linear-gradient(180.96deg, #FFFFFF 0.2%, rgba(255, 255, 255, 0) 5.62%), linear-gradient(219.86deg, #FFFFFF 0.49%, rgba(255, 255, 255, 0) 6.78%), linear-gradient(141.69deg, #FFFFFF 13.5%, rgba(247, 247, 247, 0) 22.24%),
+    url("../../assets/images/backgroundPanda1200.png") no-repeat;
+    margin-top: -30px;
+  };
+  @include media-tablet {
+    background: $color-text-alternative;
+  }
+}
+.img {
+  @include media-tablet {
+    background: linear-gradient(106.13deg, #FFFFFF 18.05%, rgba(255, 255, 255, 0.64684) 35.48%, rgba(255, 255, 255, 0) 45.95%), linear-gradient(180.96deg, #FFFFFF 0.2%, rgba(255, 255, 255, 0) 5.62%), linear-gradient(219.86deg, #FFFFFF 0.49%, rgba(255, 255, 255, 0) 6.78%), linear-gradient(141.69deg, #FFFFFF 13.5%, rgba(247, 247, 247, 0) 22.24%),
+    url("../../assets/images/backgroundPanda1200.png") no-repeat;
+    max-width: 100%;
+    position: absolute;
+    left: 0;
+    top: 257px;
+    width: 640px;
+    height: 387px;
+    background-size: 100%;
+  };
+  @include media-mobile {
+    background:   url("../../assets/images/backgroundPanda320.png") no-repeat;
+    width: 320px;
+    height: 291px;
+    top: 406px;
+  };
+}
+.promo-title {
+  width: 890px;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  color: $color-topic-btn;
+  padding-top: 173px;
+  margin: 0;
+  @include media-notebook {
+    padding-top: 126px;
+  };
+  @include media-tablet {
+    width: 600px;
+    padding-top: 50px;
+  };
+  @include media-mobile {
+    width: auto;
+    letter-spacing: 0;
+    padding: 0;
+  }
+}
+
+.promo-text {
+  width: 430px;
+  padding-top: 30px;
+  color: $color-text-main;
+  @include font($size: 1.8rem, $height: 2.7rem);
+  @include media-notebook {
+    width: 360px;
+    padding-top: 11px;
+  }
+  @include media-tablet {
+    width: 330px;
+    padding-top: 10px;
+  };
+  @include media-mobile {
+    width: auto;
+    padding-top: 20px;
+  }
+}
+
+.promo-buttons {
+  padding-top: 50px;
+  @include media-notebook {
+    padding-bottom: 100px;
+    padding-top: 30px;
+  };
+  @include media-tablet {
+    padding: 30px 0 50px 0;
+  };
+  @include media-mobile {
+    padding: 30px 0 277px 0;
+  }
+
+}
+
+.promo__buttons {
+  padding: 17px 38px 22px 30px;
+  @include media-notebook {
+    padding: 24px 38px 22px 30px;
+  }
+  @include media-mobile {
+    @include media-mobile {
+      padding: 12px 94px 12px 34px;
+    }
+  }
+}
