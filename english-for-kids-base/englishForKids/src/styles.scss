@@ -1,0 +1,134 @@
+@import "./scss/hamburger";
+@import "./scss/buttons";
+$content-tablet: 640px;
+@mixin media-tablet {
+  @media (max-width: $content-tablet) { @content;}
+};
+*{
+  font-family: "Roboto",sans-serif;
+}
+body {
+  font-family: Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: rgb(63,94,251);
+  background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+}
+main {
+  padding: 0 100px;
+ @include media-tablet {
+   padding: 0;
+   margin-right: 30px;
+ }
+}
+header {
+  padding: 0 140px;
+  text-align: center;
+  @include media-tablet {
+    padding: 0 30px;
+  }
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+.footer {
+  padding: 0 140px;
+  margin-top: 150px;
+  @include media-tablet {
+    margin-top: 50px;
+    padding: 0 30px;
+  }
+}
+.footer__ul {
+  display: flex;
+  justify-content: space-between;
+  border-top: 3px solid gold;
+  flex-wrap: wrap;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+.footer__text {
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+  transition: 0.7s;
+}
+.footer__text:hover {
+  color: gold;
+}
+.result {
+  &_good {
+    display: inline-flex;
+    height: 45px;
+    width: 45px;
+    background: url('./assets/icon/star-win.svg');
+    background-size: cover;
+  }
+  &_bad {
+    display: inline-flex;
+    height: 45px;
+    width: 45px;
+    background: url('./assets/icon/star.svg');
+    background-size: cover;
+  }
+}
+.result-success {
+  position: absolute;
+  z-index: 4;
+  background: url('./assets/img/success.jpg');
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.result-fail {
+  position: absolute;
+  z-index: 4;
+  background: url('./assets/img/failure.jpg') no-repeat;
+  left: 38%;
+  top: 13%;
+  width: 100%;
+  height: 100%;
+}
+.wrapperCongrats {
+  background-color: white;
+  position: absolute;
+  z-index: 3;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 1500px;
+  overflow: hidden;
+}
+.active {
+  background: rgb(63,94,251);
+  background: radial-gradient(circle, rgba(63,94,251,0.3701855742296919) 0%, rgba(150,34,57,1) 89%);
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.active-link {
+  color: gold;
+}
+.rating-star {
+  margin: 0 auto;
+  height: 40px;
+  overflow: hidden;
+  line-height: 36px;
+  font-size: 36px;
+  display: flex;
+  justify-content: flex-end;
+}
+.mistakeCounter {
+  font-size: 60px;
+  font-family: Roboto, sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 105px;
+  margin: 0 auto;
+}
+

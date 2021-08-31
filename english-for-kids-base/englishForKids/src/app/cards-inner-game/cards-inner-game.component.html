@@ -1,0 +1,21 @@
+<ul class="ul__Cards">
+    <li *ngFor="let iterCardsInner of BaseService.arrInnerForGame">
+        <div class="flex-column-reverse cards">
+          <div [id]="iterCardsInner.word" class="wrapper">
+            <audio [id]="iterCardsInner.word" [src]="iterCardsInner.audioSrc"  class="audio" >
+              <source [src]="iterCardsInner.audioSrc" type="audio/mpeg">
+            </audio>
+          <img [id]="iterCardsInner.word" class="imgMain" [src]="iterCardsInner.image" alt="img">
+          <div class="text__cards transition ">
+          <h3 class="front ">{{iterCardsInner.word}}</h3>
+            <img class="img__small " src="./assets/img/arrows.png" alt="arrows">
+          <h3 class="back hide ">{{iterCardsInner.translation}}</h3>
+          </div>
+          </div>
+        </div>
+    </li>
+  </ul>
+
+
+
+

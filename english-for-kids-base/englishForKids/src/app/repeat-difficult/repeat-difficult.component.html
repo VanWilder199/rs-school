@@ -1,0 +1,18 @@
+<ul class="ul__Cards">
+  <li *ngFor="let iterCardsInner of arrMistake">
+    <a>
+      <div class="flex-column-reverse cards">
+        <div [id]="iterCardsInner.word" class="wrapper">
+          <img [id]="iterCardsInner.word" class="imgMain" [src]="iterCardsInner.image" alt="img">
+          <div class="text__cards transition ">
+            <h3 class="front ">{{iterCardsInner.word}}</h3>
+          </div>
+        </div>
+      </div>
+    </a>
+  </li>
+</ul>
+
+
+
+

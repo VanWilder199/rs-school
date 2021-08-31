@@ -1,0 +1,76 @@
+.ul__Cards {
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+li {
+  list-style-type: none;
+}
+
+.flex-column-reverse {
+  display: flex;
+  flex-direction: column-reverse;
+  background-color: cornflowerblue;
+  border-radius: 5px;
+  position: relative;
+}
+
+.imgMain {
+  border-radius: 5px;
+}
+
+h3 {
+  align-self: center;
+  text-transform: capitalize;
+  text-align: center;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 32px;
+}
+
+.img__small {
+  width: 20px;
+  height: 20px;
+}
+
+.rotate :first-child {
+  display: none;
+}
+.rotate :nth-child(2) {
+  display: none;
+}
+.rotate :last-child {
+  transform: rotateY(180deg);
+  transform-style: preserve-3d;
+  transition: transform 0.9s;
+  display: block;
+}
+
+.cards:active {
+  transform: scale(0.97);
+  transition: transform 0.2s;
+}
+
+.transition {
+  transition: transform 1.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.transition :nth-child(2) {
+  padding-left: 20px;
+}
+
+.rotate {
+  transform: rotateY(180deg);
+  transform-style: preserve-3d;
+  transition: transform 1.2s;
+}
+
+.hide {
+  display: none;
+}
+
+/*# sourceMappingURL=repeat-difficult.component.css.map */
